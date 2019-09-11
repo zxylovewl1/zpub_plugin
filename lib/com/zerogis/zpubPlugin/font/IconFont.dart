@@ -8,10 +8,15 @@
  */
 class IconFont
 {
-  static const String _family = 'iconfont';
+  static String _family = 'iconfont';
 
   static String getFamily()
   {
     return _family;
+  }
+
+  static set family(String value)
+  {
+    _family = value;
   }
 }

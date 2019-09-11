@@ -6,7 +6,7 @@
  * 修改人：郑朝军 on 2019/6/5
  * 修改备注：
  */
-class PluginInitParamKeyConstant
+class InitParamKeyConstant
 {
   /*
    * 插件是否入栈操作[1=是,0=否]
@@ -103,33 +103,4 @@ class PluginInitParamKeyConstant
    * ---------------------通用组件，插件业务相关-----------------------------------
    */
   static final String PLUGIN_FLDVALUE_DISPTYPE_9 = "plugin";
-  /*
-   * ---------------------表格组件通用业务相关---------------------------------
-   */
-  /*
-   * 表格每一列的宽度
-   */
-  static final String PLUGIN_INIT_PARAM_MAIN_KEY_COLUMN_WIDTHS = "columnWidths";
-  /*
-   * 表格头
-   */
-  static final String PLUGIN_INIT_PARAM_MAIN_KEY_TABLE_HEAD = "tableHead";
-  /*
-   * 表格的名称
-   */
-  static final String PLUGIN_INIT_PARAM_MAIN_KEY_TABLE_NAME = "tableName";
-
-
-  /*
-   * ---------------------业务相关-----------------------------------------------
-   */
-  /*
-   * ---------------------MainPlugin-------------------------------------------
-   */
-  /*
-   * 底部导航拦图标和文本
-   */
-  static final String PLUGIN_INIT_PARAM_MAIN_KEY_BOTTOM_ICON_TEXT = "bottomIconText";
-  static final String PLUGIN_INIT_PARAM_MAIN_KEY_CURRENT_INDEX = "currentIndex";
-  static final String PLUGIN_INIT_PARAM_MAIN_KEY_IMAGE_URL = "imageUrl";
 }

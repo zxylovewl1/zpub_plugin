@@ -7,7 +7,7 @@ import 'package:zpub_bas/com/zerogis/zpubbase/constant/StringValueConstant.dart'
 import 'package:zpub_bas/zpub_bas.dart';
 import 'package:zpub_dbmanager/com/zerogis/zpubDbManager/bean/Plugin.dart';
 import 'package:zpub_dbmanager/com/zerogis/zpubDbManager/method/InitSvrMethod.dart';
-import 'package:zpub_plugin/com/zerogis/zpubPlugin/constant/PluginInitParamKeyConstant.dart';
+import 'package:zpub_plugin/com/zerogis/zpubPlugin/constant/InitParamKeyConstant.dart';
 import 'package:zpub_plugin/com/zerogis/zpubPlugin/font/IconFont.dart';
 import 'package:zpub_plugin/com/zerogis/zpubPlugin/util/ParamInitUtil.dart';
 
@@ -93,7 +93,7 @@ abstract class PluginBaseState<T extends PluginStatefulBase> extends PullToRefre
     else
     {
       return mInitParaMap[
-      PluginInitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_PUSH_STACK] ==
+      InitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_PUSH_STACK] ==
           DigitValueConstant.APP_DIGIT_VALUE_0
           ? false
           : true;
@@ -112,7 +112,7 @@ abstract class PluginBaseState<T extends PluginStatefulBase> extends PullToRefre
     else
     {
       return mInitParaMap[
-      PluginInitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_REFRESH] ==
+      InitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_REFRESH] ==
           DigitValueConstant.APP_DIGIT_VALUE_0
           ? false
           : true;
@@ -131,7 +131,7 @@ abstract class PluginBaseState<T extends PluginStatefulBase> extends PullToRefre
     else
     {
       return mInitParaMap[
-      PluginInitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_LOADMORE] ==
+      InitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_LOADMORE] ==
           DigitValueConstant.APP_DIGIT_VALUE_0
           ? false
           : true;
@@ -248,7 +248,7 @@ abstract class PluginBaseState<T extends PluginStatefulBase> extends PullToRefre
     if (!CxTextUtil.isEmptyMap(mInitParaMap))
     {
       mPlugins =
-      mInitParaMap[PluginInitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_PLUGS];
+      mInitParaMap[InitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_PLUGS];
     }
   }
 
@@ -263,23 +263,23 @@ abstract class PluginBaseState<T extends PluginStatefulBase> extends PullToRefre
     }
 
     int navigationBar = mInitParaMap[
-    PluginInitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_NAVIGATION_BAR];
+    InitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_NAVIGATION_BAR];
     if (navigationBar == DigitValueConstant.APP_DIGIT_VALUE_1)
     {
       // 插件是否显示底部导航栏[1=是,0=否]
       mShowNavigationBar = true;
     }
     int showProgress = mInitParaMap[
-    PluginInitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_SHOW_PROGRESS];
+    InitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_SHOW_PROGRESS];
     if (showProgress == DigitValueConstant.APP_DIGIT_VALUE_1)
     {
       // 插件是否显示进度条[1=是,0=否]
       resetProgressBar(
-          text: mInitParaMap[PluginInitParamKeyConstant
+          text: mInitParaMap[InitParamKeyConstant
               .PLUGIN_INIT_PARAM_KEY_PROGRESS_BAR_TEXT]);
     }
     int titleBar =
-    mInitParaMap[PluginInitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_TITLE_BAR];
+    mInitParaMap[InitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_TITLE_BAR];
     if (titleBar == DigitValueConstant.APP_DIGIT_VALUE_1)
     {
       // 是否隐藏标题栏[1=是,0=否]
@@ -287,7 +287,7 @@ abstract class PluginBaseState<T extends PluginStatefulBase> extends PullToRefre
     }
 
     int hideBackBtn =
-    mInitParaMap[PluginInitParamKeyConstant
+    mInitParaMap[InitParamKeyConstant
         .PLUGIN_INIT_PARAM_KEY_HIDE_BACK_BTN];
     if (hideBackBtn == DigitValueConstant.APP_DIGIT_VALUE_1)
     {
@@ -296,9 +296,9 @@ abstract class PluginBaseState<T extends PluginStatefulBase> extends PullToRefre
     }
 
     String rightButtonIcon = mInitParaMap[
-    PluginInitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_RIGHT_BUTTON_ICON];
+    InitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_RIGHT_BUTTON_ICON];
     String rightButtonText = mInitParaMap[
-    PluginInitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_RIGHT_BUTTON_TEXT];
+    InitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_RIGHT_BUTTON_TEXT];
     if (!CxTextUtil.isEmpty(rightButtonIcon))
     {
       // 插件中右边按钮图标
@@ -312,9 +312,9 @@ abstract class PluginBaseState<T extends PluginStatefulBase> extends PullToRefre
     }
 
     String borderButtonIcon = mInitParaMap[
-    PluginInitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_BORDER_BUTTON_ICON];
+    InitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_BORDER_BUTTON_ICON];
     String borderButtonText = mInitParaMap[
-    PluginInitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_BORDER_BUTTON_TEXT];
+    InitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_BORDER_BUTTON_TEXT];
     if (!CxTextUtil.isEmpty(borderButtonIcon))
     {
       // 插件中侧边按钮图标
@@ -328,7 +328,7 @@ abstract class PluginBaseState<T extends PluginStatefulBase> extends PullToRefre
     }
 
     String contentBackground = mInitParaMap[
-    PluginInitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_CONTENT_BACKGROUND];
+    InitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_CONTENT_BACKGROUND];
     if (!CxTextUtil.isEmpty(borderButtonText))
     {
       // 设置内容背景颜色
@@ -342,7 +342,7 @@ abstract class PluginBaseState<T extends PluginStatefulBase> extends PullToRefre
     }
 
     String titleBarBg = mInitParaMap[
-    PluginInitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_TITLE_BAR_BG];
+    InitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_TITLE_BAR_BG];
     if (!CxTextUtil.isEmpty(titleBarBg))
     {
       // 设置标题栏背景颜色
@@ -356,7 +356,7 @@ abstract class PluginBaseState<T extends PluginStatefulBase> extends PullToRefre
     }
 
     Map<String, dynamic> pluginitpara = mInitParaMap[
-    PluginInitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_PLUG_INITPARA];
+    InitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_PLUG_INITPARA];
     if (!CxTextUtil.isEmptyMap(pluginitpara))
     {
       // 设置配置孩子组件,插件初始化参数到内存中
@@ -467,7 +467,7 @@ abstract class PluginBaseState<T extends PluginStatefulBase> extends PullToRefre
    */
   Future<T> runPluginModel<T extends Object>(Object valueChangedMethod)
   {
-    Map<String, Object> map = mInitParaMap[PluginInitParamKeyConstant
+    Map<String, Object> map = mInitParaMap[InitParamKeyConstant
         .PLUGIN_INIT_PARAM_KEY_PLUG_MODEL];
     mChildUniversalInitPara[MapKeyConstant.MAP_KEY_VALUE_CHANGE_METHOD] =
         valueChangedMethod;
@@ -503,14 +503,14 @@ abstract class PluginBaseState<T extends PluginStatefulBase> extends PullToRefre
         !CxTextUtil.isEmptyMap(mChildUniversalInitPara))
     {
       if (!CxTextUtil.isEmptyMap(mInitParaMap[
-      PluginInitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_CHILD_INITPARA]))
+      InitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_CHILD_INITPARA]))
       {
         mParamInitUtil.convertMap(mInitParaMap, mChildUniversalInitPara);
       }
       else
       {
         showToast(
-            PluginInitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_CHILD_INITPARA);
+            InitParamKeyConstant.PLUGIN_INIT_PARAM_KEY_CHILD_INITPARA);
       }
     }
   }
