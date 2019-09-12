@@ -1,4 +1,4 @@
-1:Framwork层只存放Util相关工具类和slot层和View(FuctionStateFulBase)层
+1:将来插件机制只需要依赖zpub_dbmanager,因为以后考虑到插件机制会和本地数据库挂钩可能需要依赖比较好
 
 
 #使用方法

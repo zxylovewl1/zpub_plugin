@@ -93,13 +93,6 @@
             </list>
           </value>
         </entry>
-        <entry key="permission_handler">
-          <value>
-            <list>
-              <option value="$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/hosted/pub.flutter-io.cn/permission_handler-3.2.2/lib" />
-            </list>
-          </value>
-        </entry>
         <entry key="quiver">
           <value>
             <list>
@@ -201,30 +194,38 @@
         <entry key="zpub_bas">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/git/zpub_bas-fc79c7c96eaa18879081c82610e05dd07d6c8af9/lib" />
+              <option value="$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/git/zpub_bas-02ab89e041a54c6806d1ef77edd9cb7bb58d3fb6/lib" />
             </list>
           </value>
         </entry>
         <entry key="zpub_dbmanager">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/git/zpub_dbmanager-4c0181870a33ce39a50ea619c8a271d3ce7edd86/lib" />
+              <option value="$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/git/zpub_dbmanager-2a4769dd4de07c2a27165ad19939cef4971beb98/lib" />
             </list>
           </value>
         </entry>
-        <entry key="zpub_third">
+        <entry key="zpub_sqflite">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/git/zpub_third-99c95ba19e8215b7f4e583798d301a34979e0c34/lib" />
+              <option value="$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/git/zpub_sqflite-204422db5fe647128893934dcbd7b7c3b197f985/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="zpub_third_shard">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/git/zpub_third_shard-9b0477533f443bfaea32cf0975586a891905213d/lib" />
             </list>
           </value>
         </entry>
       </option>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/git/zpub_bas-fc79c7c96eaa18879081c82610e05dd07d6c8af9/lib" />
-      <root url="file://$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/git/zpub_dbmanager-4c0181870a33ce39a50ea619c8a271d3ce7edd86/lib" />
-      <root url="file://$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/git/zpub_third-99c95ba19e8215b7f4e583798d301a34979e0c34/lib" />
+      <root url="file://$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/git/zpub_bas-02ab89e041a54c6806d1ef77edd9cb7bb58d3fb6/lib" />
+      <root url="file://$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/git/zpub_dbmanager-2a4769dd4de07c2a27165ad19939cef4971beb98/lib" />
+      <root url="file://$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/git/zpub_sqflite-204422db5fe647128893934dcbd7b7c3b197f985/lib" />
+      <root url="file://$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/git/zpub_third_shard-9b0477533f443bfaea32cf0975586a891905213d/lib" />
       <root url="file://$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/hosted/pub.flutter-io.cn/async-2.2.0/lib" />
       <root url="file://$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/hosted/pub.flutter-io.cn/boolean_selector-1.0.4/lib" />
       <root url="file://$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/hosted/pub.flutter-io.cn/charcode-1.1.2/lib" />
@@ -236,7 +237,6 @@
       <root url="file://$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/hosted/pub.flutter-io.cn/meta-1.1.6/lib" />
       <root url="file://$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/hosted/pub.flutter-io.cn/path-1.6.2/lib" />
       <root url="file://$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/hosted/pub.flutter-io.cn/pedantic-1.7.0/lib" />
-      <root url="file://$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/hosted/pub.flutter-io.cn/permission_handler-3.2.2/lib" />
       <root url="file://$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/hosted/pub.flutter-io.cn/quiver-2.0.3/lib" />
       <root url="file://$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/hosted/pub.flutter-io.cn/shared_preferences-0.5.3+4/lib" />
       <root url="file://$PROJECT_DIR$/../../../../../Android/env/flutter/.pub-cache/hosted/pub.flutter-io.cn/source_span-1.5.5/lib" />
